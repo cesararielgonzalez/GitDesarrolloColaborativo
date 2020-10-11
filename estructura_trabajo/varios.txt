@@ -1,0 +1,45 @@
+/****** INICIALIZAR REPOSITORIO */
+git init
+  
+/****** Establecer NOMBRE DE USUARIO -- proy actual o 
+	todos los proyectos en forma integral */
+git config user.name "Ari"
+git config --global user.name "Ari"
+
+/* **** DIRECCIÓN DE CORREO ELECTRÓNICO */
+git config --global user.email "cesar.ariel.gonzalez@gmail.com"
+
+
+/* VER CONFIGURACIONES */
+git config --global --get-regexp user   /*--get-regexp user (todas las expresiones regulares que contengan la variable user) */
+					/* obteneme todas las expresiones reguares que contengan la palabra USER */
+
+git config --list --show-origin		/* ver config completa */
+
+
+
+/* AGREGAR */
+git add					/* agregar al index */
+git rm --cached <file>			/* quita el archivo del area de control de cambios */
+git restore --staged <file>		/* to unstage porque ya existe un checkpoint - no hay checkpoint */
+			
+TRABAJO -> AGREGO LOS CAMBIOS AL INDEX (STAGING AREA) -> COMITEO (registro los cambios)
+
+/* COMITEAR */
+git commit				/* comittea los cambios... la primera vez abre archivo para ingresar 
+					   de mensage */
+git commit -m				/* comitea con mensage */
+
+
+
+
+git log --oneline			/* version corta */
+git log --oneline -5			/* version - ultimas 5 modificaciones */
+git log --oneline --decorate --all --graph 
+					/* que se muestren colores en la liner de todos los aversion - ultimas 5 modificaciones */
+
+
+
+cuando se una una letra 1 "-" mas palabra "--"
+
+git status				/* estado */
