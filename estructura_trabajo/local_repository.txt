@@ -26,5 +26,12 @@ git diff	"evalua las momdificaciones realizadas"
 	~nro. => commit anterior
 
 
+git checkout	"Permite mover el Apuntador a la direccion indicada"
+	git checkout HEAD => define el commit actual como nueva cabecera
+	git checkout HEAD <ancestro> => retrocede x cantidad de commits
+	git checkout <hash> => cambia el directorio de trabajo a como se encontraba en el commit indicado
+	git checkout -b <branch> => crear la rama y mueve el apuntador a ella
+	git checkout <branch> => mueve el apuntador al HEAD (ultimo commit) de la rama especificada
+	git checkout <tag> => mueve el apuntador al commit etiquetado
 
 
