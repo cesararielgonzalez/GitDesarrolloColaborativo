@@ -1,0 +1,25 @@
+SERVIDORES DE CLIENTE GIT
+	https://github.com
+	https://gitlab.com
+	https://bitbucket.com
+
+Comandos:	
+	
+	Para establecer conexion con los servidores
+	debemos previamente hacer iniciado sesion
+	mediante la consola, esta operacion se solicita
+	la primera vez que subamos archivos al servidor
+
+Lista de Comandos:
+-------- BAJADA -------- 
+git FETCH	
+	git fetch <remote> => "obtener el registro de cambios (INDEX - Repo)"			
+git PULL (FETCH + MERGE)
+	git pull <remote> => "obtener cambios y fusionarlos con nuestro proyecto"
+	git pull <remote> <branch> => integra los cambios de la rama x a la rama actual
+
+-------- SUBIDA --------
+git PUSH
+	git push <remote> "enviar el registro de cambios (Remote Repo)"
+	git push --set-upstrem <remote> <branch> => definir una rama de subida (seguimiento)
+	git push --unset-upstream <remote> <branch> => quita del seguimiento la rama especificada
